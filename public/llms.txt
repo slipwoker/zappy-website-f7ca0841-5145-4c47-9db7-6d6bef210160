@@ -1,0 +1,57 @@
+# Meat House — Generative Engine Optimization Map
+
+> A מסעדנות business.
+
+---
+
+## Pages
+
+### Home
+https://meat-house-f7ca0841.zappy5.app
+the meat house - מסעדה ארגנטינאית מובילה המתמחה בבשר איכותי. חווית אוכל ייחודית למשפחות ואוהבי בשר. בואו לטעום את הטעם האמיתי!
+
+### Menu
+https://meat-house-f7ca0841.zappy5.app/menu
+גלו את תפריט the meat house - מבחר רחב של בשרים ארגנטינאיים איכותיים, סטייקים פרימיום ומנות מיוחדות. meat house market מציע את הטוב ביותר!
+
+### About
+https://meat-house-f7ca0841.zappy5.app/about
+הכירו את the meat house - מסעדת בשר ארגנטינאית המשלבת מסורת עתיקה עם איכות מודרנית. למדו על הערכים, הצוות והתשוקה שלנו לבשר איכותי.
+
+### Contact
+https://meat-house-f7ca0841.zappy5.app/contact
+צרו קשר עם the meat house - הזמינו מקום, שאלו שאלות או בואו לבקר אותנו. אנחנו כאן כדי להעניק לכם חוויה קולינרית בלתי נשכחת!
+
+## Legal & Policy
+
+### Privacy Policy
+https://meat-house-f7ca0841.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://meat-house-f7ca0841.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://meat-house-f7ca0841.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Meat House
+Meat House is a business in the מסעדנות industry.
+
+## Target Audience
+ארגנטינאים, אוהבי בשר, משפחות
+
+## Industry
+מסעדנות
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://meat-house-f7ca0841.zappy5.app/sitemap.xml
+- **Robots.txt**: https://meat-house-f7ca0841.zappy5.app/robots.txt

@@ -1,0 +1,1090 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות - Meat House | הסיפור שלנו והמסורת הארגנטינאית</title>
+    <meta name="description" content="הכירו את the meat house - מסעדת בשר ארגנטינאית המשלבת מסורת עתיקה עם איכות מודרנית. למדו על הערכים, הצוות והתשוקה שלנו לבשר איכותי.">
+    <meta name="keywords" content="אודות meat house, מסעדה ארגנטינאית, beefalo meat house, הסיפור שלנו, מסורת ארגנטינאית">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'f7ca0841-5145-4c47-9db7-6d6bef210160',
+    apiUrl: 'http://localhost:5001/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+    <nav class="navbar"><button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+        </button><button class="phone-header-btn" aria-label="Call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+        </button><div class="nav-container"><div class="nav-right-group"><div class="nav-brand"><a href="/" class="logo-link" aria-label="Home"><img class="logo" src="/assets/business-logo.webp" alt="Meat House"></a></div><ul class="nav-menu" id="navMenu">
+            <li><a href="/menu">תפריט</a></li>
+            <li><a href="/about" class="active">אודות</a></li>
+            <li class="mobile-contact-link"><a href="/contact" class="nav-cta">צור קשר</a></li>
+        </ul></div><div class="nav-cta-container">
+          <li class="nav-cta-item">
+            <a href="/contact" class="nav-cta-btn">צור קשר</a>
+          </li>
+        </div></div></nav>
+
+    <main>
+        <!-- About Hero -->
+        <section class="page-hero about-hero">
+            <div class="page-hero-bg">
+                <img data-placeholder="about-hero-grill" data-context="Traditional argentinian grill with flames, rustic setting, warm atmosphere, professional photography" width="1920" height="600" src="/assets/site-about-image-1.webp" alt="Our Grill" class="img-heroFullBleed">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>הסיפור שלנו</h1>
+                    <p>מסורת ארגנטינאית עם תשוקה ישראלית</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content-grid">
+                    <div class="story-text">
+                        <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" class="star-divider">
+                            <g fill="#D4B06A">
+                                <rect x="0" y="11" width="92" height="2" opacity=".55"></rect>
+                                <rect x="148" y="11" width="92" height="2" opacity=".55"></rect>
+                                <path d="M120 2l2.8 6.2 6.7.6-5.1 4.4 1.5 6.6-5.9-3.5-5.9 3.5 1.5-6.6-5.1-4.4 6.7-.6z"></path>
+                            </g>
+                        </svg>
+                        <h2>המסע שלנו החל בתשוקה</h2>
+                        <p class="story-intro">הכל התחיל מחלום פשוט - להביא את הטעמים האותנטיים של ארגנטינה לישראל. כמי שגדלנו על מסורת הגריל הארגנטינאית, הבנו שיש משהו מיוחד בשילוב של בשר איכותי, טכניקות בישול מסורתיות ואווירה חמימה משפחתית.</p>
+                        
+                        <p>לפני למעלה מ-15 שנים, פתחנו את the meat house עם חזון ברור: ליצור מקום שבו אנשים יכולים לחוות את הטעם האמיתי של בשר ארגנטינאי מבושל לשלמות. לא רק עוד מסעדת בשר, אלא מקום שמשדר את התרבות, המסורת והאותנטיות של המטבח הארגנטינאי.</p>
+                        
+                        <p>לאורך השנים, למדנו שהסוד לא רק בבשר עצמו, אלא בכל התהליך - מבחירת החתכים הטובים ביותר, דרך התיבול בתבלינים מקוריים מארגנטינה, ועד לבישול האיטי והסבלני על גחלים אמיתיות. כל פרט חשוב, וכל שלב בתהליך תורם לחוויה הסופית.</p>
+                    </div>
+                    
+                    <div class="story-image">
+                        <img data-placeholder="founders-story" data-context="Restaurant founders in traditional argentinian grill setting, warm and authentic atmosphere" width="600" height="700" src="/assets/site-about-image-2.webp" alt="Our Story" class="img-ovalFrameWide">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" class="star-divider">
+                        <g fill="#D4B06A">
+                            <rect x="0" y="11" width="92" height="2" opacity=".55"></rect>
+                            <rect x="148" y="11" width="92" height="2" opacity=".55"></rect>
+                            <path d="M120 2l2.8 6.2 6.7.6-5.1 4.4 1.5 6.6-5.9-3.5-5.9 3.5 1.5-6.6-5.1-4.4 6.7-.6z"></path>
+                        </g>
+                    </svg>
+                    <h2 class="section-title-light">הערכים שלנו</h2>
+                    <p class="section-subtitle-light">העקרונות שמנחים אותנו בכל יום</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                        </div>
+                        <h3>איכות ללא פשרות</h3>
+                        <p>אנחנו לא מתפשרים על איכות. כל חתך בשר עובר בדיקה קפדנית, ואנחנו עובדים רק עם ספקים מהימנים שמבינים את הסטנדרטים הגבוהים שלנו. beefalo meat house מייצג מצוינות באיכות.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <h3>תשוקה אמיתית</h3>
+                        <p>אנחנו לא רק מבשלים בשר - אנחנו חיים ונושמים אותו. כל חבר בצוות שלנו מביא תשוקה אמיתית לעבודה, ואתם יכולים לטעום את זה בכל ביס.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <h3>אווירה משפחתית</h3>
+                        <p>ב-meat house אתם לא רק לקוחות - אתם חלק מהמשפחה. אנחנו שמים דגש על יצירת אווירה חמה ומזמינה שגורמת לכם להרגיש בבית.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                        </div>
+                        <h3>מסורת אותנטית</h3>
+                        <p>אנחנו שומרים על המסורת הארגנטינאית המקורית בכל מה שאנחנו עושים - מטכניקות הגריל ועד לתבלינים שאנחנו משתמשים בהם.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                        <h3>קיימות ואחריות</h3>
+                        <p>אנחנו מאמינים באחריות כלפי הסביבה והקהילה. אנחנו עובדים עם ספקים מקומיים כשאפשר ושומרים על שיטות עבודה ידידותיות לסביבה.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon-wrapper">
+                            <div class="value-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <h3>שיפור מתמיד</h3>
+                        <p>אנחנו תמיד מחפשים דרכים להשתפר ולהתפתח. אנחנו מקשיבים למשוב שלכם ועובדים כל הזמן על שיפור החוויה שאנחנו מציעים.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" class="star-divider">
+                        <g fill="#D4B06A">
+                            <rect x="0" y="11" width="92" height="2" opacity=".55"></rect>
+                            <rect x="148" y="11" width="92" height="2" opacity=".55"></rect>
+                            <path d="M120 2l2.8 6.2 6.7.6-5.1 4.4 1.5 6.6-5.9-3.5-5.9 3.5 1.5-6.6-5.1-4.4 6.7-.6z"></path>
+                        </g>
+                    </svg>
+                    <h2 class="section-title">הצוות שלנו</h2>
+                    <p class="section-subtitle">האנשים שמאחורי הקסם</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img data-placeholder="head-chef" data-context="Professional chef in kitchen, confident pose, warm lighting, restaurant setting" width="400" height="500" src="/assets/site-about-image-3.webp" alt="Head Chef" class="img-ovalFrameWide">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>השף הראשי</h3>
+                            <p class="team-member-role">מומחה לגריל ארגנטינאי</p>
+                            <p class="team-member-bio">עם למעלה מ-20 שנות ניסיון במטבח הארגנטינאי, השף שלנו הביא איתו את כל הידע והטכניקות המסורתיות. הוא מאמין שבישול טוב מתחיל בחומרי גלם מעולים וסבלנות.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img data-placeholder="grill-master" data-context="Grill master working with flames, action shot, professional atmosphere" width="400" height="500" src="/assets/site-about-image-4.webp" alt="Grill Master" class="img-ovalFrameWide">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>מאסטר הגריל</h3>
+                            <p class="team-member-role">אומן האש והגחלים</p>
+                            <p class="team-member-bio">האחראי על הגריל המסורתי שלנו, הוא שומר על המסורת הארגנטינאית של בישול על גחלים אמיתיות. כל סטייק שעובר דרך הידיים שלו מקבל את תשומת הלב המלאה.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-philosophy">
+                    <h3>הפילוסופיה שלנו</h3>
+                    <p>אנחנו מאמינים שצוות מעולה הוא הבסיס למסעדה מצוינת. כל חבר בצוות שלנו עובר הכשרה מקיפה במסורת הארגנטינאית, ואנחנו משקיעים בפיתוח מקצועי מתמיד. התוצאה? חוויה עקבית ומעולה בכל ביקור.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" class="star-divider">
+                        <g fill="#D4B06A">
+                            <rect x="0" y="11" width="92" height="2" opacity=".55"></rect>
+                            <rect x="148" y="11" width="92" height="2" opacity=".55"></rect>
+                            <path d="M120 2l2.8 6.2 6.7.6-5.1 4.4 1.5 6.6-5.9-3.5-5.9 3.5 1.5-6.6-5.1-4.4 6.7-.6z"></path>
+                        </g>
+                    </svg>
+                    <h2 class="section-title-light">התהליך שלנו</h2>
+                    <p class="section-subtitle-light">איך אנחנו מכינים את הבשר המושלם</p>
+                </div>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>בחירת הבשר</h3>
+                            <p>אנחנו בוחרים בקפידה רק את החתכים הטובים ביותר מספקים מהימנים. כל חתך עובר בדיקת איכות קפדנית לפני שהוא נכנס למטבח שלנו.</p>
+                        </div>
+                        <div class="step-image">
+                            <img data-placeholder="meat-selection" data-context="Premium raw meat cuts selection, professional butcher display" width="300" height="250" src="/assets/site-about-image-5.webp" alt="Meat Selection" class="img-thumbnailRounded">
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>הבשלה והתיבול</h3>
+                            <p>הבשר מתובל בתבלינים ארגנטינאיים מקוריים ועובר תהליך הבשלה איטי שמאפשר לטעמים להיספג עמוק לתוך הבשר.</p>
+                        </div>
+                        <div class="step-image">
+                            <img data-placeholder="seasoning" data-context="Meat being seasoned with argentinian spices, hands working, artisan style" width="300" height="250" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3ESeasoning%3C/text%3E%3C/svg%3E" alt="Seasoning" class="img-thumbnailRounded">
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>הגריל המסורתי</h3>
+                            <p>הבשר נצלה על גריל מסורתי עם גחלים אמיתיות, בטכניקה שעברה דרך הדורות בארגנטינה. זה מה שנותן את הטעם המעושן והייחודי.</p>
+                        </div>
+                        <div class="step-image">
+                            <img data-placeholder="grilling" data-context="Steak grilling on traditional charcoal grill with flames, dramatic lighting" width="300" height="250" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EGrilling%3C/text%3E%3C/svg%3E" alt="Grilling" class="img-thumbnailRounded">
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>ההגשה המושלמת</h3>
+                            <p>לבסוף, הבשר מוגש בטמפרטורה המושלמת עם תוספות ארגנטינאיות אותנטיות כמו צ'ימיצ'ורי ביתי וירקות צלויים.</p>
+                        </div>
+                        <div class="step-image">
+                            <img data-placeholder="plating" data-context="Beautifully plated steak dish with sides, elegant presentation, professional food photography" width="300" height="250" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EPlating%3C/text%3E%3C/svg%3E" alt="Plating" class="img-thumbnailRounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit CTA -->
+        <section class="visit-cta-section">
+            <div class="container">
+                <div class="visit-cta-content">
+                    <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" class="star-divider">
+                        <g fill="#D4B06A">
+                            <rect x="0" y="11" width="92" height="2" opacity=".55"></rect>
+                            <rect x="148" y="11" width="92" height="2" opacity=".55"></rect>
+                            <path d="M120 2l2.8 6.2 6.7.6-5.1 4.4 1.5 6.6-5.9-3.5-5.9 3.5 1.5-6.6-5.1-4.4 6.7-.6z"></path>
+                        </g>
+                    </svg>
+                    <h2>בואו לחוות את ההבדל</h2>
+                    <p>הצטרפו אלינו וגלו מדוע the meat house הפך למסעדת הבשר האהובה על אלפי לקוחות</p>
+                    <div class="visit-cta-buttons">
+                        <a href="/menu" class="btn-primary">צפו בתפריט</a>
+                        <a href="/contact" class="btn-secondaryOutline">הזמינו מקום</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-texture"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <svg width="160" height="55" viewBox="0 0 160 55" xmlns="http://www.w3.org/2000/svg" class="footer-logo">
+                        <g fill="none" stroke="#F6EAD4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 38 L35 15"></path>
+                            <path d="M38 15 L61 38"></path>
+                            <path d="M18 35 L12 38 L19 41"></path>
+                            <path d="M55 35 L61 38 L54 41"></path>
+                        </g>
+                        <g fill="#F6EAD4">
+                            <circle cx="36.5" cy="26.5" r="3.5"></circle>
+                            <path d="M10 44h52v3H10z" opacity=".5"></path>
+                        </g>
+                        <text x="75" y="32" fill="#F6EAD4" font-family="Georgia, serif" font-size="20" font-weight="900">MEAT HOUSE</text>
+                    </svg>
+                    <p class="footer-tagline">הטעם האמיתי של בשר ארגנטינאי</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>קישורים מהירים</h4>
+                    <ul class="footer-links">
+                        <li><a href="/menu">תפריט</a></li>
+                        <li><a href="/about">אודות</a></li>
+                        <li><a href="/contact">צור קשר</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>פרטי התקשרות</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:[business_email]">[business_email]</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:[business_phone]">[business_phone]</a>
+                        </li>
+                        <li><a href="/menu"><i class="fas fa-map-marker-alt"></i>
+                            <span>[business_address]</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>עקבו אחרינו</h4>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/[facebook_handle]" class="icon-socialCircle" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/[instagram_handle]" class="icon-socialCircle" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/[whatsapp_handle]" class="icon-socialCircle" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="/privacy">מדיניות פרטיות</a>
+                    <span class="separator">|</span>
+                    <a href="/accessibility">הצהרת נגישות</a>
+                    <span class="separator">|</span>
+                    <a href="/terms">תנאי שימוש</a>
+                </div>
+                <div class="footer-attribution">
+                    <p>© 2024 Meat House. כל הזכויות שמורות.</p>
+                    <p>Generated by <a href="https://zappy5.com" target="_blank" rel="noopener">Zappy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/[business_phone]" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="/script.js"></script>
+
+
+<script>
+
+// Navbar Mobile Menu Toggle and Contrast Fix
+(function() {
+  // Use 'load' event instead of 'DOMContentLoaded' to ensure we run AFTER all other scripts
+  window.addEventListener('load', function() {
+    
+    // FIX MOBILE BUTTON CONTRAST
+    // Detect navbar background color and apply contrasting color to mobile buttons
+    const navbar = document.querySelector('.navbar, nav, header');
+    if (!navbar) {
+      console.log('[Navbar] Navbar element not found');
+      return;
+    }
+    
+    const computedStyle = window.getComputedStyle(navbar);
+    let bgColor = computedStyle.backgroundColor;
+    
+    console.log('[Navbar] Initial navbar background:', bgColor);
+    
+    // Check if background is transparent or rgba with 0 alpha
+    const isTransparent = bgColor === 'transparent' || 
+                         bgColor === 'rgba(0, 0, 0, 0)' ||
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
+    
+    if (isTransparent) {
+      // Check for background-image or gradient
+      const bgImage = computedStyle.backgroundImage;
+      if (bgImage && bgImage !== 'none') {
+        console.log('[Navbar] Navbar has background image/gradient, using dark text');
+        bgColor = 'rgb(240, 240, 240)'; // Assume light background
+      } else {
+        // Transparent navbar - check body background
+        const bodyBg = window.getComputedStyle(document.body).backgroundColor;
+        console.log('[Navbar] Navbar transparent, using body background:', bodyBg);
+        bgColor = bodyBg;
+      }
+    }
+    
+    // Calculate luminance to determine if background is light or dark
+    const rgb = bgColor.match(/\d+/g);
+    if (rgb && rgb.length >= 3) {
+      const r = parseInt(rgb[0]);
+      const g = parseInt(rgb[1]);
+      const b = parseInt(rgb[2]);
+      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+      
+      // Don't apply color overrides - let Claude's CSS handle all colors
+      const mobileToggle = document.querySelector('.mobile-toggle');
+      const phoneBtn = document.querySelector('.phone-header-btn');
+      
+      console.log('[Navbar] Mobile buttons found - colors from Claude\'s CSS:', { 
+        bgColor, 
+        luminance: luminance.toFixed(2),
+        buttons: { mobileToggle: !!mobileToggle, phoneBtn: !!phoneBtn }
+      });
+      
+      // FIX ICON SIZES - Ensure SVGs are properly sized and visible
+      // INJECT CRITICAL CSS TO OVERRIDE ANY CONFLICTING RULES
+      const criticalCSS = document.createElement('style');
+      criticalCSS.id = 'zappy-mobile-nav-fix';
+      const htmlLang = document.documentElement.lang || 'en';
+      const isRTL = htmlLang === 'he' || htmlLang === 'ar';
+      
+      criticalCSS.textContent = `
+        /* Hide mobile buttons on desktop, show only on mobile */
+        @media (min-width: 769px) {
+          .mobile-toggle,
+          .phone-header-btn {
+            display: none !important;
+          }
+        }
+        
+        /* Show and position mobile buttons correctly on mobile */
+        @media (max-width: 768px) {
+          .mobile-toggle,
+          .phone-header-btn {
+            position: absolute !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            z-index: 1001 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 44px !important;
+            height: 44px !important;
+            border-radius: 50% !important;
+            /* Background and colors from Claude's CSS - don't override */
+            border: none !important;
+            cursor: pointer !important;
+            padding: 8px !important;
+          }
+          
+          .mobile-toggle {
+            ${isRTL ? 'right: 20px !important; left: auto !important;' : 'left: 20px !important; right: auto !important;'}
+          }
+          
+          .phone-header-btn {
+            ${isRTL ? 'left: 20px !important; right: auto !important;' : 'right: 20px !important; left: auto !important;'}
+          }
+          
+          /* Ensure SVG icons are properly sized - colors from Claude's CSS */
+          .mobile-toggle svg,
+          .phone-header-btn svg {
+            width: 24px !important;
+            height: 24px !important;
+            /* Don't force display - let JavaScript control hamburger/close toggle */
+          }
+          
+          /* SVG path colors from Claude's CSS - don't override */
+        }
+      `;
+      
+      // Remove existing fix if present and inject new one
+      const existing = document.getElementById('zappy-mobile-nav-fix');
+      if (existing) existing.remove();
+      document.head.appendChild(criticalCSS);
+      
+      console.log('[Navbar] Critical CSS injected for mobile nav positioning');
+      
+      if (mobileToggle) {
+        // Also set inline styles as backup
+        mobileToggle.style.setProperty('position', 'absolute', 'important');
+        mobileToggle.style.setProperty('top', '50%', 'important');
+        mobileToggle.style.setProperty('transform', 'translateY(-50%)', 'important');
+        mobileToggle.style.setProperty('z-index', '1001', 'important');
+        
+        if (isRTL) {
+          mobileToggle.style.setProperty('right', '20px', 'important');
+          mobileToggle.style.setProperty('left', 'auto', 'important');
+        } else {
+          mobileToggle.style.setProperty('left', '20px', 'important');
+          mobileToggle.style.setProperty('right', 'auto', 'important');
+        }
+        
+        const hamburgerIcon = mobileToggle.querySelector('.hamburger-icon');
+        const closeIcon = mobileToggle.querySelector('.close-icon');
+        
+        if (hamburgerIcon) {
+          hamburgerIcon.style.setProperty('width', '24px', 'important');
+          hamburgerIcon.style.setProperty('height', '24px', 'important');
+          hamburgerIcon.style.setProperty('display', 'block', 'important'); // Show hamburger by default
+          console.log('[Navbar] Hamburger icon sized and shown');
+        }
+        if (closeIcon) {
+          closeIcon.style.setProperty('width', '24px', 'important');
+          closeIcon.style.setProperty('height', '24px', 'important');
+          closeIcon.style.setProperty('display', 'none', 'important'); // Hide close icon by default
+          console.log('[Navbar] Close icon sized and hidden');
+        }
+        
+        console.log('[Navbar] Mobile toggle positioned:', {
+          lang: htmlLang,
+          position: htmlLang === 'he' || htmlLang === 'ar' ? 'right: 20px' : 'left: 20px'
+        });
+      }
+      
+      if (phoneBtn) {
+        // Also set inline styles as backup
+        phoneBtn.style.setProperty('position', 'absolute', 'important');
+        phoneBtn.style.setProperty('top', '50%', 'important');
+        phoneBtn.style.setProperty('transform', 'translateY(-50%)', 'important');
+        phoneBtn.style.setProperty('z-index', '1001', 'important');
+        
+        if (isRTL) {
+          phoneBtn.style.setProperty('left', '20px', 'important');
+          phoneBtn.style.setProperty('right', 'auto', 'important');
+        } else {
+          phoneBtn.style.setProperty('right', '20px', 'important');
+          phoneBtn.style.setProperty('left', 'auto', 'important');
+        }
+        
+        const phoneIcon = phoneBtn.querySelector('svg');
+        if (phoneIcon) {
+          phoneIcon.style.width = '24px';
+          phoneIcon.style.height = '24px';
+          phoneIcon.setAttribute('width', '24');
+          phoneIcon.setAttribute('height', '24');
+          console.log('[Navbar] Phone icon sized to 24x24');
+        }
+        
+        console.log('[Navbar] Phone button positioned:', {
+          lang: htmlLang,
+          position: htmlLang === 'he' || htmlLang === 'ar' ? 'left: 20px' : 'right: 20px'
+        });
+      }
+    } else {
+      console.log('[Navbar] Could not parse background color:', bgColor);
+    }
+    
+    // MOBILE MENU TOGGLE
+   
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (!mobileToggle || !navMenu) {
+      console.log('[Navbar] Mobile toggle or menu not found');
+      return;
+    }
+    
+    console.log('[Navbar] Initializing mobile menu...');
+    
+    // Remove any existing event listeners by cloning the button
+    const newToggle = mobileToggle.cloneNode(true);
+    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
+    
+    // Toggle menu on button click - use newToggle now
+    newToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const hamburgerIcon = this.querySelector('.hamburger-icon');
+      const closeIcon = this.querySelector('.close-icon');
+      const isActive = navMenu.classList.contains('active');
+      
+      if (isActive) {
+        // Close menu
+        navMenu.classList.remove('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
+        document.body.style.overflow = '';
+        console.log('[Navbar] Menu closed');
+      } else {
+        // Open menu
+        navMenu.classList.add('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'none', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'block', 'important');
+        document.body.style.overflow = 'hidden';
+        console.log('[Navbar] Menu opened');
+      }
+    });
+    
+    // Close menu when clicking nav links
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const hamburgerIcon = newToggle.querySelector('.hamburger-icon');
+        const closeIcon = newToggle.querySelector('.close-icon');
+        
+        navMenu.classList.remove('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
+        document.body.style.overflow = '';
+        console.log('[Navbar] Menu closed (link clicked)');
+      });
+    });
+    
+    // Phone button functionality
+    const phoneBtn = document.querySelector('.phone-header-btn');
+    if (phoneBtn) {
+      phoneBtn.addEventListener('click', function() {
+        // Get phone number from placeholder in page or use default
+        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+        const phoneNumber = phoneLinks.length > 0 
+          ? phoneLinks[0].getAttribute('href').replace('tel:', '')
+          : '[business_phone]';
+        
+        window.location.href = 'tel:' + phoneNumber;
+        console.log('[Navbar] Phone button clicked');
+      });
+    }
+    
+    console.log('[Navbar] Mobile menu initialized successfully');
+    
+    // === WHATSAPP BUTTON VISIBILITY FIX ===
+    // Ensure WhatsApp floating button is hidden on desktop and visible on mobile
+    const handleWhatsAppVisibility = function() {
+      const whatsappBtn = document.querySelector('.whatsapp-float, a[href*="wa.me"]');
+      if (whatsappBtn) {
+        const isDesktop = window.innerWidth >= 769;
+        if (isDesktop) {
+          whatsappBtn.style.setProperty('display', 'none', 'important');
+          whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
+          whatsappBtn.style.setProperty('opacity', '0', 'important');
+          whatsappBtn.style.setProperty('pointer-events', 'none', 'important');
+          console.log('[WhatsApp] Button hidden on desktop');
+        } else {
+          whatsappBtn.style.removeProperty('display');
+          whatsappBtn.style.removeProperty('visibility');
+          whatsappBtn.style.removeProperty('opacity');
+          whatsappBtn.style.removeProperty('pointer-events');
+          console.log('[WhatsApp] Button visible on mobile');
+        }
+      }
+    };
+    
+    // Run on load
+    handleWhatsAppVisibility();
+    
+    // Run on resize with debouncing
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(handleWhatsAppVisibility, 100);
+    });
+  });
+})();
+
+</script>
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = 'f7ca0841-5145-4c47-9db7-6d6bef210160';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('http://localhost:5001/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+</body></html>
