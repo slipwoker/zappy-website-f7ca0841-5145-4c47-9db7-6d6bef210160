@@ -1,6 +1,4 @@
-# Meat House — Generative Engine Optimization Map
-
-> A מסעדנות business.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,15 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Meat House
-Meat House is a business in the מסעדנות industry.
-
-## Target Audience
-ארגנטינאים, אוהבי בשר, משפחות
-
-## Industry
-מסעדנות
-
+## About Business
 ---
 
 # Additional Resources

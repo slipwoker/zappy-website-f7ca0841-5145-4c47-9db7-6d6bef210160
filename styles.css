@@ -1146,3 +1146,9 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+/* === AI CUSTOMIZATION ADDITIONS === */
+/* Remove top margin from main element */
+main {
+  margin-top: 0 !important;
+}
