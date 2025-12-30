@@ -1,57 +1,47 @@
-# Meat House — Generative Engine Optimization Map
-
-> A מסעדנות business.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### Home
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com
+https://meat-house.zappy5.app
 the meat house - מסעדה ארגנטינאית מובילה המתמחה בבשר איכותי. חווית אוכל ייחודית למשפחות ואוהבי בשר. בואו לטעום את הטעם האמיתי!
 
 ### Menu
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/menu
+https://meat-house.zappy5.app/menu
 גלו את תפריט the meat house - מבחר רחב של בשרים ארגנטינאיים איכותיים, סטייקים פרימיום ומנות מיוחדות. meat house market מציע את הטוב ביותר!
 
 ### About
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/about
+https://meat-house.zappy5.app/about
 הכירו את the meat house - מסעדת בשר ארגנטינאית המשלבת מסורת עתיקה עם איכות מודרנית. למדו על הערכים, הצוות והתשוקה שלנו לבשר איכותי.
 
 ### Contact
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/contact
+https://meat-house.zappy5.app/contact
 צרו קשר עם the meat house - הזמינו מקום, שאלו שאלות או בואו לבקר אותנו. אנחנו כאן כדי להעניק לכם חוויה קולינרית בלתי נשכחת!
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/privacy
+https://meat-house.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/terms
+https://meat-house.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/accessibility
+https://meat-house.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Meat House
-Meat House is a business in the מסעדנות industry.
-
-## Target Audience
-ארגנטינאים, אוהבי בשר, משפחות
-
-## Industry
-מסעדנות
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/sitemap.xml
-- **Robots.txt**: https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/robots.txt
+- **Sitemap**: https://meat-house.zappy5.app/sitemap.xml
+- **Robots.txt**: https://meat-house.zappy5.app/robots.txt
