@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://meat-house.zappy5.app/sitemap.xml
+Sitemap: https://zappy-site-f7ca0841-5145-4c47-9db7.onrender.com/sitemap.xml
